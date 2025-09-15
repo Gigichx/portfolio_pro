@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services & Process - Portfolio Pro</title>
+    <meta name="description" content="Professional web development services including frontend development, full-stack solutions, and design implementation with a proven process." />
+    <link rel="stylesheet" href="../css/main.css" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fportfolio9764back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary font-source overflow-x-hidden">
+    <!-- Fixed Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="hero_landing_section.html" class="font-inter font-bold text-xl text-accent">
+                        Portfolio Pro
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="hero_landing_section.html" class="text-text-secondary hover:text-accent px-3 py-2 text-sm font-medium transition-colors duration-200">Home</a>
+                        <a href="about_section.html" class="text-text-secondary hover:text-accent px-3 py-2 text-sm font-medium transition-colors duration-200">About</a>
+                        <a href="portfolio_showcase.html" class="text-text-secondary hover:text-accent px-3 py-2 text-sm font-medium transition-colors duration-200">Portfolio</a>
+                        <a href="services_process.html" class="text-accent border-b-2 border-accent px-3 py-2 text-sm font-medium transition-colors duration-200">Services</a>
+                        <a href="testimonials_social_proof.html" class="text-text-secondary hover:text-accent px-3 py-2 text-sm font-medium transition-colors duration-200">Testimonials</a>
+                        <a href="contact_hub.html" class="text-text-secondary hover:text-accent px-3 py-2 text-sm font-medium transition-colors duration-200">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text-secondary hover:text-accent p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-background/95 backdrop-blur-md border-b border-border">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="hero_landing_section.html" class="text-text-secondary hover:text-accent hover:bg-secondary block px-3 py-2 text-base font-medium rounded-md transition-colors duration-200">Home</a>
+                <a href="about_section.html" class="text-text-secondary hover:text-accent hover:bg-secondary block px-3 py-2 text-base font-medium rounded-md transition-colors duration-200">About</a>
+                <a href="portfolio_showcase.html" class="text-text-secondary hover:text-accent hover:bg-secondary block px-3 py-2 text-base font-medium rounded-md transition-colors duration-200">Portfolio</a>
+                <a href="services_process.html" class="text-accent bg-secondary block px-3 py-2 text-base font-medium rounded-md">Services</a>
+                <a href="testimonials_social_proof.html" class="text-text-secondary hover:text-accent hover:bg-secondary block px-3 py-2 text-base font-medium rounded-md transition-colors duration-200">Testimonials</a>
+                <a href="contact_hub.html" class="text-text-secondary hover:text-accent hover:bg-secondary block px-3 py-2 text-base font-medium rounded-md transition-colors duration-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-16 bg-secondary overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, rgba(100, 255, 218, 0.2) 1px, transparent 0); background-size: 40px 40px;"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-8">
+                <div class="space-y-4">
+                    <h1 class="font-inter font-bold text-4xl sm:text-5xl lg:text-6xl leading-tight">
+                        <span class="text-text-primary">Services &</span>
+                        <span class="text-gradient block">Process</span>
+                    </h1>
+                    <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                        Comprehensive web development solutions with a proven methodology that delivers exceptional results for every project.
+                    </p>
+                </div>
+                
+                <!-- Availability Status -->
+                <div class="inline-flex items-center gap-3 bg-success/10 border border-success/20 px-6 py-3 rounded-full">
+                    <div class="w-3 h-3 bg-success rounded-full animate-pulse"></div>
+                    <span class="text-success font-inter font-semibold">Currently accepting new projects</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-inter font-bold text-3xl sm:text-4xl text-text-primary mb-4">
+                    What I Offer
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Specialized services tailored to bring your digital vision to life with technical excellence and creative flair.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Frontend Development -->
+                <div class="card group hover:border-accent/50 transition-all duration-300">
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center group-hover:bg-accent/20 transition-colors duration-300">
+                                <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-inter font-semibold text-xl text-text-primary">Frontend Development</h3>
+                        </div>
+                        
+                        <p class="text-text-secondary">
+                            Modern, responsive user interfaces built with the latest technologies and best practices for optimal user experience.
+                        </p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-sm text-text-secondary">React</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-sm text-text-secondary">Vue.js</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-sm text-text-secondary">TypeScript</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-sm text-text-secondary">Tailwind CSS</span>
+                            </div>
+                            
+                            <div class="space-y-2">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm text-text-secondary">Timeline:</span>
+                                    <span class="text-sm text-accent font-semibold">2-6 weeks</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm text-text-secondary">Starting from:</span>
+                                    <span class="text-sm text-accent font-semibold">$2,500</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Client Testimonial -->
+                        <div class="bg-secondary/50 border border-border rounded-lg p-4">
+                            <p class="text-sm text-text-secondary italic mb-2">
+                                "Alex delivered a stunning React dashboard that improved our user engagement by 45%."
+                            </p>
+                            <p class="text-xs text-accent">— Sarah Chen, Product Manager</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Full-Stack Solutions -->
+                <div class="card group hover:border-accent/50 transition-all duration-300">
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center group-hover:bg-accent/20 transition-colors duration-300">
+                                <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-inter font-semibold text-xl text-text-primary">Full-Stack Solutions</h3>
+                        </div>
+                        
+                        <p class="text-text-secondary">
+                            Complete web applications with robust backend architecture, database design, and seamless API integration.
+                        </p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-sm text-text-secondary">Node.js</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-sm text-text-secondary">Express</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-sm text-text-secondary">MongoDB</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-sm text-text-secondary">PostgreSQL</span>
+                            </div>
+                            
+                            <div class="space-y-2">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm text-text-secondary">Timeline:</span>
+                                    <span class="text-sm text-accent font-semibold">6-12 weeks</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm text-text-secondary">Starting from:</span>
+                                    <span class="text-sm text-accent font-semibold">$5,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Client Testimonial -->
+                        <div class="bg-secondary/50 border border-border rounded-lg p-4">
+                            <p class="text-sm text-text-secondary italic mb-2">
+                                "The e-commerce platform Alex built increased our online sales by 60% in the first quarter."
+                            </p>
+                            <p class="text-xs text-accent">— Michael Torres, CEO</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Design Implementation -->
+                <div class="card group hover:border-accent/50 transition-all duration-300">
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center group-hover:bg-accent/20 transition-colors duration-300">
+                                <svg class="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-inter font-semibold text-xl text-text-primary">Design Implementation</h3>
+                        </div>
+                        
+                        <p class="text-text-secondary">
+                            Pixel-perfect conversion of designs to responsive, performant code with attention to every detail and interaction.
+                        </p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-sm text-text-secondary">Figma to Code</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-sm text-text-secondary">Responsive Design</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-sm text-text-secondary">Performance</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-sm text-text-secondary">Accessibility</span>
+                            </div>
+                            
+                            <div class="space-y-2">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm text-text-secondary">Timeline:</span>
+                                    <span class="text-sm text-accent font-semibold">1-4 weeks</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-sm text-text-secondary">Starting from:</span>
+                                    <span class="text-sm text-accent font-semibold">$1,500</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Client Testimonial -->
+                        <div class="bg-secondary/50 border border-border rounded-lg p-4">
+                            <p class="text-sm text-text-secondary italic mb-2">
+                                "Improved site speed by 60% and mobile conversions by 40% with Alex's optimization work."
+                            </p>
+                            <p class="text-xs text-accent">— Emma Watson, Marketing Director</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-20 bg-secondary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-inter font-bold text-3xl sm:text-4xl text-text-primary mb-4">
+                    My Process
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    A proven methodology that ensures clear communication, timely delivery, and exceptional results for every project.
+                </p>
+            </div>
+            
+            <!-- Process Steps -->
+            <div class="space-y-8">
+                <!-- Step 1: Discovery & Planning -->
+                <div class="process-step group" data-step="1">
+                    <div class="flex flex-col lg:flex-row items-start gap-8">
+                        <div class="flex-shrink-0 flex items-center gap-4">
+                            <div class="w-16 h-16 bg-accent/10 border-2 border-accent rounded-full flex items-center justify-center group-hover:bg-accent/20 transition-all duration-300">
+                                <span class="font-inter font-bold text-xl text-accent">1</span>
+                            </div>
+                            <div class="hidden lg:block w-32 h-0.5 bg-border group-hover:bg-accent/30 transition-colors duration-300"></div>
+                        </div>
+                        
+                        <div class="flex-1 card group-hover:border-accent/50 transition-all duration-300">
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between">
+                                    <h3 class="font-inter font-semibold text-xl text-text-primary">Discovery & Planning</h3>
+                                    <svg class="w-5 h-5 text-accent transform group-hover:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </div>
+                                
+                                <p class="text-text-secondary">
+                                    Understanding your goals, target audience, and technical requirements to create a comprehensive project roadmap.
+                                </p>
+                                
+                                <div class="process-details hidden group-hover:block space-y-4 pt-4 border-t border-border">
+                                    <div class="grid md:grid-cols-2 gap-4">
+                                        <div>
+                                            <h4 class="font-inter font-semibold text-text-primary mb-2">Deliverables:</h4>
+                                            <ul class="text-sm text-text-secondary space-y-1">
+                                                <li>• Project requirements document</li>
+                                                <li>• Technical architecture plan</li>
+                                                <li>• Timeline and milestone breakdown</li>
+                                                <li>• Budget and resource allocation</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-inter font-semibold text-text-primary mb-2">Communication:</h4>
+                                            <ul class="text-sm text-text-secondary space-y-1">
+                                                <li>• Initial consultation call</li>
+                                                <li>• Requirements gathering sessions</li>
+                                                <li>• Weekly progress updates</li>
+                                                <li>• Slack/email for quick questions</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 2: Design & Prototyping -->
+                <div class="process-step group" data-step="2">
+                    <div class="flex flex-col lg:flex-row items-start gap-8">
+                        <div class="flex-shrink-0 flex items-center gap-4">
+                            <div class="w-16 h-16 bg-accent/10 border-2 border-accent rounded-full flex items-center justify-center group-hover:bg-accent/20 transition-all duration-300">
+                                <span class="font-inter font-bold text-xl text-accent">2</span>
+                            </div>
+                            <div class="hidden lg:block w-32 h-0.5 bg-border group-hover:bg-accent/30 transition-colors duration-300"></div>
+                        </div>
+                        
+                        <div class="flex-1 card group-hover:border-accent/50 transition-all duration-300">
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between">
+                                    <h3 class="font-inter font-semibold text-xl text-text-primary">Design & Prototyping</h3>
+                                    <svg class="w-5 h-5 text-accent transform group-hover:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </div>
+                                
+                                <p class="text-text-secondary">
+                                    Creating wireframes, mockups, and interactive prototypes to visualize the final product before development begins.
+                                </p>
+                                
+                                <div class="process-details hidden group-hover:block space-y-4 pt-4 border-t border-border">
+                                    <div class="grid md:grid-cols-2 gap-4">
+                                        <div>
+                                            <h4 class="font-inter font-semibold text-text-primary mb-2">Deliverables:</h4>
+                                            <ul class="text-sm text-text-secondary space-y-1">
+                                                <li>• Wireframes and user flows</li>
+                                                <li>• High-fidelity mockups</li>
+                                                <li>• Interactive prototypes</li>
+                                                <li>• Design system documentation</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-inter font-semibold text-text-primary mb-2">Tools Used:</h4>
+                                            <ul class="text-sm text-text-secondary space-y-1">
+                                                <li>• Figma for design</li>
+                                                <li>• Framer for prototyping</li>
+                                                <li>• Adobe Creative Suite</li>
+                                                <li>• Principle for animations</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 3: Development & Testing -->
+                <div class="process-step group" data-step="3">
+                    <div class="flex flex-col lg:flex-row items-start gap-8">
+                        <div class="flex-shrink-0 flex items-center gap-4">
+                            <div class="w-16 h-16 bg-accent/10 border-2 border-accent rounded-full flex items-center justify-center group-hover:bg-accent/20 transition-all duration-300">
+                                <span class="font-inter font-bold text-xl text-accent">3</span>
+                            </div>
+                            <div class="hidden lg:block w-32 h-0.5 bg-border group-hover:bg-accent/30 transition-colors duration-300"></div>
+                        </div>
+                        
+                        <div class="flex-1 card group-hover:border-accent/50 transition-all duration-300">
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between">
+                                    <h3 class="font-inter font-semibold text-xl text-text-primary">Development & Testing</h3>
+                                    <svg class="w-5 h-5 text-accent transform group-hover:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </div>
+                                
+                                <p class="text-text-secondary">
+                                    Building the application with clean, maintainable code while conducting thorough testing across all devices and browsers.
+                                </p>
+                                
+                                <div class="process-details hidden group-hover:block space-y-4 pt-4 border-t border-border">
+                                    <div class="grid md:grid-cols-2 gap-4">
+                                        <div>
+                                            <h4 class="font-inter font-semibold text-text-primary mb-2">Development:</h4>
+                                            <ul class="text-sm text-text-secondary space-y-1">
+                                                <li>• Agile development sprints</li>
+                                                <li>• Version control with Git</li>
+                                                <li>• Code reviews and documentation</li>
+                                                <li>• Performance optimization</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-inter font-semibold text-text-primary mb-2">Testing:</h4>
+                                            <ul class="text-sm text-text-secondary space-y-1">
+                                                <li>• Cross-browser compatibility</li>
+                                                <li>• Responsive design testing</li>
+                                                <li>• Performance audits</li>
+                                                <li>• Accessibility compliance</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 4: Launch & Optimization -->
+                <div class="process-step group" data-step="4">
+                    <div class="flex flex-col lg:flex-row items-start gap-8">
+                        <div class="flex-shrink-0 flex items-center gap-4">
+                            <div class="w-16 h-16 bg-accent/10 border-2 border-accent rounded-full flex items-center justify-center group-hover:bg-accent/20 transition-all duration-300">
+                                <span class="font-inter font-bold text-xl text-accent">4</span>
+                            </div>
+                            <div class="hidden lg:block w-32 h-0.5 bg-border group-hover:bg-accent/30 transition-colors duration-300"></div>
+                        </div>
+                        
+                        <div class="flex-1 card group-hover:border-accent/50 transition-all duration-300">
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between">
+                                    <h3 class="font-inter font-semibold text-xl text-text-primary">Launch & Optimization</h3>
+                                    <svg class="w-5 h-5 text-accent transform group-hover:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </div>
+                                
+                                <p class="text-text-secondary">
+                                    Deploying your application to production with monitoring, analytics, and continuous optimization for peak performance.
+                                </p>
+                                
+                                <div class="process-details hidden group-hover:block space-y-4 pt-4 border-t border-border">
+                                    <div class="grid md:grid-cols-2 gap-4">
+                                        <div>
+                                            <h4 class="font-inter font-semibold text-text-primary mb-2">Launch:</h4>
+                                            <ul class="text-sm text-text-secondary space-y-1">
+                                                <li>• Production deployment</li>
+                                                <li>• Domain and SSL setup</li>
+                                                <li>• Analytics implementation</li>
+                                                <li>• SEO optimization</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-inter font-semibold text-text-primary mb-2">Optimization:</h4>
+                                            <ul class="text-sm text-text-secondary space-y-1">
+                                                <li>• Performance monitoring</li>
+                                                <li>• User behavior analysis</li>
+                                                <li>• A/B testing setup</li>
+                                                <li>• Conversion optimization</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 5: Ongoing Support -->
+                <div class="process-step group" data-step="5">
+                    <div class="flex flex-col lg:flex-row items-start gap-8">
+                        <div class="flex-shrink-0 flex items-center gap-4">
+                            <div class="w-16 h-16 bg-accent/10 border-2 border-accent rounded-full flex items-center justify-center group-hover:bg-accent/20 transition-all duration-300">
+                                <span class="font-inter font-bold text-xl text-accent">5</span>
+                            </div>
+                        </div>
+                        
+                        <div class="flex-1 card group-hover:border-accent/50 transition-all duration-300">
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between">
+                                    <h3 class="font-inter font-semibold text-xl text-text-primary">Ongoing Support</h3>
+                                    <svg class="w-5 h-5 text-accent transform group-hover:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </div>
+                                
+                                <p class="text-text-secondary">
+                                    Providing maintenance, updates, and enhancements to ensure your application continues to perform at its best.
+                                </p>
+                                
+                                <div class="process-details hidden group-hover:block space-y-4 pt-4 border-t border-border">
+                                    <div class="grid md:grid-cols-2 gap-4">
+                                        <div>
+                                            <h4 class="font-inter font-semibold text-text-primary mb-2">Maintenance:</h4>
+                                            <ul class="text-sm text-text-secondary space-y-1">
+                                                <li>• Security updates</li>
+                                                <li>• Bug fixes and patches</li>
+                                                <li>• Performance monitoring</li>
+                                                <li>• Backup management</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-inter font-semibold text-text-primary mb-2">Enhancements:</h4>
+                                            <ul class="text-sm text-text-secondary space-y-1">
+                                                <li>• Feature additions</li>
+                                                <li>• UI/UX improvements</li>
+                                                <li>• Integration updates</li>
+                                                <li>• Scalability planning</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack Section -->
+    <section id="tech-stack" class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-inter font-bold text-3xl sm:text-4xl text-text-primary mb-4">
+                    Technology Stack
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Modern tools and frameworks I use to build exceptional web applications with performance and scalability in mind.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Frontend -->
+                <div class="card">
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center">
+                                <svg class="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-inter font-semibold text-lg text-text-primary">Frontend</h3>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-text-secondary">React</span>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-16 h-2 bg-surface rounded-full overflow-hidden">
+                                        <div class="w-full h-full bg-accent"></div>
+                                    </div>
+                                    <span class="text-xs text-accent">Expert</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-text-secondary">TypeScript</span>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-16 h-2 bg-surface rounded-full overflow-hidden">
+                                        <div class="w-5/6 h-full bg-accent"></div>
+                                    </div>
+                                    <span class="text-xs text-accent">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-text-secondary">Vue.js</span>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-16 h-2 bg-surface rounded-full overflow-hidden">
+                                        <div class="w-4/6 h-full bg-accent"></div>
+                                    </div>
+                                    <span class="text-xs text-accent">Proficient</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Backend -->
+                <div class="card">
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center">
+                                <svg class="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-inter font-semibold text-lg text-text-primary">Backend</h3>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-text-secondary">Node.js</span>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-16 h-2 bg-surface rounded-full overflow-hidden">
+                                        <div class="w-full h-full bg-accent"></div>
+                                    </div>
+                                    <span class="text-xs text-accent">Expert</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-text-secondary">Express</span>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-16 h-2 bg-surface rounded-full overflow-hidden">
+                                        <div class="w-5/6 h-full bg-accent"></div>
+                                    </div>
+                                    <span class="text-xs text-accent">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-text-secondary">Python</span>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-16 h-2 bg-surface rounded-full overflow-hidden">
+                                        <div class="w-4/6 h-full bg-accent"></div>
+                                    </div>
+                                    <span class="text-xs text-accent">Proficient</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Database -->
+                <div class="card">
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center">
+                                <svg class="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-inter font-semibold text-lg text-text-primary">Database</h3>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-text-secondary">MongoDB</span>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-16 h-2 bg-surface rounded-full overflow-hidden">
+                                        <div class="w-5/6 h-full bg-accent"></div>
+                                    </div>
+                                    <span class="text-xs text-accent">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-text-secondary">PostgreSQL</span>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-16 h-2 bg-surface rounded-full overflow-hidden">
+                                        <div class="w-4/6 h-full bg-accent"></div>
+                                    </div>
+                                    <span class="text-xs text-accent">Proficient</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-text-secondary">Redis</span>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-16 h-2 bg-surface rounded-full overflow-hidden">
+                                        <div class="w-3/6 h-full bg-accent"></div>
+                                    </div>
+                                    <span class="text-xs text-accent">Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tools & DevOps -->
+                <div class="card">
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center">
+                                <svg class="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-inter font-semibold text-lg text-text-primary">Tools & DevOps</h3>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-text-secondary">Docker</span>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-16 h-2 bg-surface rounded-full overflow-hidden">
+                                        <div class="w-4/6 h-full bg-accent"></div>
+                                    </div>
+                                    <span class="text-xs text-accent">Proficient</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-text-secondary">AWS</span>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-16 h-2 bg-surface rounded-full overflow-hidden">
+                                        <div class="w-4/6 h-full bg-accent"></div>
+                                    </div>
+                                    <span class="text-xs text-accent">Proficient</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-text-secondary">Git</span>
+                                <div class="flex items-center gap-2">
+                                    <div class="w-16 h-2 bg-surface rounded-full overflow-hidden">
+                                        <div class="w-full h-full bg-accent"></div>
+                                    </div>
+                                    <span class="text-xs text-accent">Expert</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-20 bg-secondary">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="space-y-8">
+                <div class="space-y-4">
+                    <h2 class="font-inter font-bold text-3xl sm:text-4xl text-text-primary">
+                        Ready to Start Your Project?
+                    </h2>
+                    <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                        Let's discuss your vision and create something exceptional together. I'm currently accepting new projects and would love to hear about yours.
+                    </p>
+                </div>
+                
+                <!-- Project Preferences -->
+                <div class="bg-surface border border-border rounded-lg p-6">
+                    <h3 class="font-inter font-semibold text-lg text-text-primary mb-4">Preferred Project Types</h3>
+                    <div class="flex flex-wrap gap-3 justify-center">
+                        <span class="px-4 py-2 bg-accent/10 border border-accent/20 rounded-full text-sm text-accent">SaaS Applications</span>
+                        <span class="px-4 py-2 bg-accent/10 border border-accent/20 rounded-full text-sm text-accent">E-commerce Platforms</span>
+                        <span class="px-4 py-2 bg-accent/10 border border-accent/20 rounded-full text-sm text-accent">Portfolio Websites</span>
+                        <span class="px-4 py-2 bg-accent/10 border border-accent/20 rounded-full text-sm text-accent">Web Applications</span>
+                        <span class="px-4 py-2 bg-accent/10 border border-accent/20 rounded-full text-sm text-accent">API Development</span>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact_hub.html" class="btn-primary inline-flex items-center justify-center group">
+                        <span>Start a Project</span>
+                        <svg class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                    <a href="portfolio_showcase.html" class="btn-secondary inline-flex items-center justify-center group">
+                        <svg class="mr-2 w-5 h-5 group-hover:scale-110 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                        </svg>
+                        <span>View Portfolio</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for Interactions -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Process step hover effects
+        const processSteps = document.querySelectorAll('.process-step');
+        
+        processSteps.forEach(step => {
+            step.addEventListener('mouseenter', () => {
+                const details = step.querySelector('.process-details');
+                if (details) {
+                    details.classList.remove('hidden');
+                    details.classList.add('animate-slide-up');
+                }
+            });
+            
+            step.addEventListener('mouseleave', () => {
+                const details = step.querySelector('.process-details');
+                if (details) {
+                    details.classList.add('hidden');
+                    details.classList.remove('animate-slide-up');
+                }
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe cards and process steps for scroll animations
+        document.querySelectorAll('.card, .process-step').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Technology stack progress bar animations
+        const techCards = document.querySelectorAll('#tech-stack .card');
+        
+        const techObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const progressBars = entry.target.querySelectorAll('.w-16 > div');
+                    progressBars.forEach((bar, index) => {
+                        setTimeout(() => {
+                            bar.style.transition = 'width 1s ease-out';
+                            bar.style.width = bar.style.width || bar.className.match(/w-\d+\/\d+|w-full/)?.[0];
+                        }, index * 200);
+                    });
+                }
+            });
+        }, observerOptions);
+        
+        techCards.forEach(card => {
+            techObserver.observe(card);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Showcase - Portfolio Pro</title>
+    <meta name="description" content="Explore my curated collection of web applications, e-commerce solutions, design systems, and open source contributions showcasing technical expertise and creative problem-solving." />
+    <link rel="stylesheet" href="../css/main.css" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fportfolio9764back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary font-source overflow-x-hidden">
+    <!-- Fixed Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="hero_landing_section.html" class="font-inter font-bold text-xl text-accent">
+                        Portfolio Pro
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="hero_landing_section.html" class="text-text-secondary hover:text-accent px-3 py-2 text-sm font-medium transition-colors duration-200">Home</a>
+                        <a href="about_section.html" class="text-text-secondary hover:text-accent px-3 py-2 text-sm font-medium transition-colors duration-200">About</a>
+                        <a href="portfolio_showcase.html" class="text-accent border-b-2 border-accent px-3 py-2 text-sm font-medium transition-colors duration-200">Portfolio</a>
+                        <a href="services_process.html" class="text-text-secondary hover:text-accent px-3 py-2 text-sm font-medium transition-colors duration-200">Services</a>
+                        <a href="testimonials_social_proof.html" class="text-text-secondary hover:text-accent px-3 py-2 text-sm font-medium transition-colors duration-200">Testimonials</a>
+                        <a href="contact_hub.html" class="text-text-secondary hover:text-accent px-3 py-2 text-sm font-medium transition-colors duration-200">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text-secondary hover:text-accent p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-background/95 backdrop-blur-md border-b border-border">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="hero_landing_section.html" class="text-text-secondary hover:text-accent hover:bg-secondary block px-3 py-2 text-base font-medium rounded-md transition-colors duration-200">Home</a>
+                <a href="about_section.html" class="text-text-secondary hover:text-accent hover:bg-secondary block px-3 py-2 text-base font-medium rounded-md transition-colors duration-200">About</a>
+                <a href="portfolio_showcase.html" class="text-accent bg-secondary block px-3 py-2 text-base font-medium rounded-md">Portfolio</a>
+                <a href="services_process.html" class="text-text-secondary hover:text-accent hover:bg-secondary block px-3 py-2 text-base font-medium rounded-md transition-colors duration-200">Services</a>
+                <a href="testimonials_social_proof.html" class="text-text-secondary hover:text-accent hover:bg-secondary block px-3 py-2 text-base font-medium rounded-md transition-colors duration-200">Testimonials</a>
+                <a href="contact_hub.html" class="text-text-secondary hover:text-accent hover:bg-secondary block px-3 py-2 text-base font-medium rounded-md transition-colors duration-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Showcase Section -->
+    <section class="pt-24 pb-16 bg-secondary min-h-screen">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <h1 class="font-inter font-bold text-4xl sm:text-5xl lg:text-6xl mb-6 animate-fade-in">
+                    <span class="text-gradient">Portfolio</span> <span class="text-text-primary">Showcase</span>
+                </h1>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto animate-slide-up" style="animation-delay: 0.3s;">
+                    A curated collection of projects demonstrating technical expertise, creative problem-solving, and measurable impact across diverse domains.
+                </p>
+            </div>
+
+            <!-- Filter Navigation -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12 animate-slide-up" style="animation-delay: 0.6s;">
+                <button class="filter-btn active" data-filter="all">
+                    <svg class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                    </svg>
+                    All Projects
+                </button>
+                <button class="filter-btn" data-filter="web-apps">
+                    <svg class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                    Web Applications
+                </button>
+                <button class="filter-btn" data-filter="ecommerce">
+                    <svg class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+                    </svg>
+                    E-commerce
+                </button>
+                <button class="filter-btn" data-filter="design-systems">
+                    <svg class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z"/>
+                    </svg>
+                    Design Systems
+                </button>
+                <button class="filter-btn" data-filter="open-source">
+                    <svg class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                    </svg>
+                    Open Source
+                </button>
+                <button id="reset-filters" class="btn-secondary text-sm">
+                    <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                    </svg>
+                    Reset
+                </button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 animate-slide-up" style="animation-delay: 0.9s;">
+                <!-- Project 1: E-commerce Platform -->
+                <div class="project-card" data-category="ecommerce web-apps" data-project="ecommerce-platform">
+                    <div class="card group cursor-pointer h-full">
+                        <div class="relative overflow-hidden rounded-lg mb-4">
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Modern E-commerce Platform Interface" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" onerror="this.src='https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1000'; this.onerror=null;" />
+                            <div class="absolute inset-0 bg-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="text-background font-inter font-semibold">View Case Study</span>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <h3 class="font-inter font-semibold text-xl text-text-primary group-hover:text-accent transition-colors duration-200">
+                                ModernShop E-commerce Platform
+                            </h3>
+                            <p class="text-text-secondary text-sm">
+                                Full-stack e-commerce solution with advanced filtering, real-time inventory, and seamless checkout experience.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">React</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">Node.js</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">MongoDB</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">Stripe</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: React Dashboard -->
+                <div class="project-card" data-category="web-apps" data-project="react-dashboard">
+                    <div class="card group cursor-pointer h-full">
+                        <div class="relative overflow-hidden rounded-lg mb-4">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Analytics Dashboard Interface" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/27/21/42/stock-1863880_1280.jpg'; this.onerror=null;" />
+                            <div class="absolute inset-0 bg-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="text-background font-inter font-semibold">View Case Study</span>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <h3 class="font-inter font-semibold text-xl text-text-primary group-hover:text-accent transition-colors duration-200">
+                                Analytics Pro Dashboard
+                            </h3>
+                            <p class="text-text-secondary text-sm">
+                                Real-time analytics dashboard with interactive charts, data visualization, and performance monitoring.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">React</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">TypeScript</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">Chart.js</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">WebSocket</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Design System -->
+                <div class="project-card" data-category="design-systems" data-project="design-system">
+                    <div class="card group cursor-pointer h-full">
+                        <div class="relative overflow-hidden rounded-lg mb-4">
+                            <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Design System Components" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=2340&auto=format&fit=crop'; this.onerror=null;" />
+                            <div class="absolute inset-0 bg-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="text-background font-inter font-semibold">View Case Study</span>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <h3 class="font-inter font-semibold text-xl text-text-primary group-hover:text-accent transition-colors duration-200">
+                                Unified Design System
+                            </h3>
+                            <p class="text-text-secondary text-sm">
+                                Comprehensive design system with reusable components, design tokens, and documentation for scalable products.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">Figma</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">Storybook</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">Tailwind CSS</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">React</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Open Source Library -->
+                <div class="project-card" data-category="open-source" data-project="open-source-lib">
+                    <div class="card group cursor-pointer h-full">
+                        <div class="relative overflow-hidden rounded-lg mb-4">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Code Repository Interface" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png'; this.onerror=null;" />
+                            <div class="absolute inset-0 bg-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="text-background font-inter font-semibold">View Case Study</span>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <h3 class="font-inter font-semibold text-xl text-text-primary group-hover:text-accent transition-colors duration-200">
+                                ReactFlow Extensions
+                            </h3>
+                            <p class="text-text-secondary text-sm">
+                                Open source library extending ReactFlow with custom nodes, advanced layouts, and performance optimizations.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">TypeScript</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">React</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">D3.js</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">Jest</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Performance Optimization -->
+                <div class="project-card" data-category="web-apps" data-project="performance-optimization">
+                    <div class="card group cursor-pointer h-full">
+                        <div class="relative overflow-hidden rounded-lg mb-4">
+                            <img src="https://images.pexels.com/photos/590020/pexels-photo-590020.jpg?auto=compress&cs=tinysrgb&w=1000" alt="Performance Metrics Dashboard" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2340&auto=format&fit=crop'; this.onerror=null;" />
+                            <div class="absolute inset-0 bg-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="text-background font-inter font-semibold">View Case Study</span>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <h3 class="font-inter font-semibold text-xl text-text-primary group-hover:text-accent transition-colors duration-200">
+                                Performance Optimization Suite
+                            </h3>
+                            <p class="text-text-secondary text-sm">
+                                Comprehensive performance audit and optimization resulting in 75% faster load times and improved Core Web Vitals.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">Webpack</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">Lighthouse</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">CDN</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">Service Workers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Mobile App -->
+                <div class="project-card" data-category="web-apps" data-project="mobile-app">
+                    <div class="card group cursor-pointer h-full">
+                        <div class="relative overflow-hidden rounded-lg mb-4">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mobile Application Interface" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" onerror="this.src='https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=1000'; this.onerror=null;" />
+                            <div class="absolute inset-0 bg-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="text-background font-inter font-semibold">View Case Study</span>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <h3 class="font-inter font-semibold text-xl text-text-primary group-hover:text-accent transition-colors duration-200">
+                                TaskFlow Mobile PWA
+                            </h3>
+                            <p class="text-text-secondary text-sm">
+                                Progressive Web App for task management with offline capabilities, push notifications, and native-like experience.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">PWA</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">React</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">IndexedDB</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">Push API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7: E-commerce Marketplace -->
+                <div class="project-card" data-category="ecommerce" data-project="marketplace">
+                    <div class="card group cursor-pointer h-full">
+                        <div class="relative overflow-hidden rounded-lg mb-4">
+                            <img src="https://images.pixabay.com/photo/2017/03/13/17/26/ecommerce-2140603_1280.jpg" alt="Marketplace Platform Interface" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=2340&auto=format&fit=crop'; this.onerror=null;" />
+                            <div class="absolute inset-0 bg-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="text-background font-inter font-semibold">View Case Study</span>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <h3 class="font-inter font-semibold text-xl text-text-primary group-hover:text-accent transition-colors duration-200">
+                                ArtisanHub Marketplace
+                            </h3>
+                            <p class="text-text-secondary text-sm">
+                                Multi-vendor marketplace connecting artisans with customers, featuring vendor dashboards and commission management.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">Next.js</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">PostgreSQL</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">Prisma</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">PayPal</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8: Component Library -->
+                <div class="project-card" data-category="design-systems open-source" data-project="component-library">
+                    <div class="card group cursor-pointer h-full">
+                        <div class="relative overflow-hidden rounded-lg mb-4">
+                            <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Component Library Documentation" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy" onerror="this.src='https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1000'; this.onerror=null;" />
+                            <div class="absolute inset-0 bg-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <span class="text-background font-inter font-semibold">View Case Study</span>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <h3 class="font-inter font-semibold text-xl text-text-primary group-hover:text-accent transition-colors duration-200">
+                                Nexus UI Component Library
+                            </h3>
+                            <p class="text-text-secondary text-sm">
+                                Open source React component library with 50+ components, comprehensive documentation, and TypeScript support.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">React</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">TypeScript</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">Storybook</span>
+                                <span class="px-3 py-1 bg-surface border border-border rounded-full text-xs text-text-secondary">npm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GitHub Integration Section -->
+            <div class="mt-20 text-center animate-slide-up" style="animation-delay: 1.2s;">
+                <h2 class="font-inter font-semibold text-3xl mb-8 text-text-primary">
+                    Open Source <span class="text-gradient">Contributions</span>
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <!-- GitHub Stats Card -->
+                    <div class="card">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="font-inter font-semibold text-xl text-text-primary">GitHub Activity</h3>
+                            <a href="https://github.com" target="_blank" class="text-accent hover:text-success transition-colors duration-200">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary">Public Repositories</span>
+                                <span class="font-inter font-semibold text-accent">47</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary">Total Stars Received</span>
+                                <span class="font-inter font-semibold text-accent">1,284</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary">Contributions (2025)</span>
+                                <span class="font-inter font-semibold text-accent">892</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-text-secondary">Followers</span>
+                                <span class="font-inter font-semibold text-accent">156</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Contributions -->
+                    <div class="card">
+                        <h3 class="font-inter font-semibold text-xl text-text-primary mb-4">Recent Contributions</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-3 h-3 bg-success rounded-full"></div>
+                                <div class="flex-1">
+                                    <p class="text-sm text-text-primary">Added TypeScript support to react-flow-extensions</p>
+                                    <p class="text-xs text-text-secondary">2 days ago</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-3 h-3 bg-accent rounded-full"></div>
+                                <div class="flex-1">
+                                    <p class="text-sm text-text-primary">Fixed performance issue in nexus-ui components</p>
+                                    <p class="text-xs text-text-secondary">5 days ago</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-3 h-3 bg-warning rounded-full"></div>
+                                <div class="flex-1">
+                                    <p class="text-sm text-text-primary">Updated documentation for design-system-toolkit</p>
+                                    <p class="text-xs text-text-secondary">1 week ago</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-3 h-3 bg-success rounded-full"></div>
+                                <div class="flex-1">
+                                    <p class="text-sm text-text-primary">Contributed to open-source analytics library</p>
+                                    <p class="text-xs text-text-secondary">2 weeks ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="text-center mt-16 animate-slide-up" style="animation-delay: 1.5s;">
+                <h2 class="font-inter font-semibold text-2xl mb-4 text-text-primary">
+                    Ready to discuss your next project?
+                </h2>
+                <p class="text-text-secondary mb-8 max-w-2xl mx-auto">
+                    Let's collaborate to bring your vision to life with thoughtful solutions and clean code.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact_hub.html" class="btn-primary inline-flex items-center justify-center group">
+                        <span>Start a Conversation</span>
+                        <svg class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                    <a href="services_process.html" class="btn-secondary inline-flex items-center justify-center">
+                        <span>View Services</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Modal -->
+    <div id="case-study-modal" class="fixed inset-0 z-50 hidden bg-background/90 backdrop-blur-md">
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="bg-secondary border border-border rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+                <!-- Modal Header -->
+                <div class="sticky top-0 bg-secondary border-b border-border p-6 flex items-center justify-between">
+                    <h2 id="modal-title" class="font-inter font-bold text-2xl text-text-primary"></h2>
+                    <button id="close-modal" class="text-text-secondary hover:text-accent transition-colors duration-200">
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <!-- Modal Content -->
+                <div id="modal-content" class="p-6">
+                    <!-- Content will be dynamically loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Interactions -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+        const resetButton = document.getElementById('reset-filters');
+
+        // Filter button styles
+        const filterBtnStyles = 'px-4 py-2 rounded-lg font-inter font-medium text-sm transition-all duration-200 ease-out flex items-center';
+        const activeStyles = 'bg-accent text-primary shadow-modal';
+        const inactiveStyles = 'bg-surface text-text-secondary border border-border hover:border-accent hover:text-accent';
+
+        // Initialize filter buttons
+        filterButtons.forEach(btn => {
+            btn.className = `filter-btn ${filterBtnStyles} ${btn.classList.contains('active') ? activeStyles : inactiveStyles}`;
+        });
+
+        // Filter functionality
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.dataset.filter;
+                
+                // Update active button
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('active');
+                    btn.className = `filter-btn ${filterBtnStyles} ${inactiveStyles}`;
+                });
+                button.classList.add('active');
+                button.className = `filter-btn ${filterBtnStyles} ${activeStyles}`;
+                
+                // Filter projects
+                projectCards.forEach(card => {
+                    const categories = card.dataset.category.split(' ');
+                    if (filter === 'all' || categories.includes(filter)) {
+                        card.style.display = 'block';
+                        card.classList.add('animate-fade-in');
+                    } else {
+                        card.style.display = 'none';
+                        card.classList.remove('animate-fade-in');
+                    }
+                });
+            });
+        });
+
+        // Reset filters
+        resetButton.addEventListener('click', () => {
+            // Reset to "All Projects"
+            filterButtons.forEach(btn => {
+                btn.classList.remove('active');
+                btn.className = `filter-btn ${filterBtnStyles} ${inactiveStyles}`;
+            });
+            filterButtons[0].classList.add('active');
+            filterButtons[0].className = `filter-btn ${filterBtnStyles} ${activeStyles}`;
+            
+            // Show all projects
+            projectCards.forEach(card => {
+                card.style.display = 'block';
+                card.classList.add('animate-fade-in');
+            });
+        });
+
+        // Case study modal functionality
+        const modal = document.getElementById('case-study-modal');
+        const modalTitle = document.getElementById('modal-title');
+        const modalContent = document.getElementById('modal-content');
+        const closeModal = document.getElementById('close-modal');
+
+        // Case study data
+        const caseStudies = {
+            'ecommerce-platform': {
+                title: 'ModernShop E-commerce Platform',
+                content: `
+                    <div class="space-y-8">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h3 class="font-inter font-semibold text-xl text-text-primary mb-4">Project Overview</h3>
+                                <p class="text-text-secondary mb-4">A comprehensive e-commerce solution built for a growing retail business, featuring advanced product filtering, real-time inventory management, and seamless checkout experience.</p>
+                                <div class="space-y-2">
+                                    <p class="text-sm"><span class="text-accent font-semibold">Timeline:</span> 4 months</p>
+                                    <p class="text-sm"><span class="text-accent font-semibold">Team Size:</span> 3 developers</p>
+                                    <p class="text-sm"><span class="text-accent font-semibold">My Role:</span> Lead Frontend Developer</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="font-inter font-semibold text-xl text-text-primary mb-4">Key Results</h3>
+                                <div class="space-y-3">
+                                    <div class="flex justify-between">
+                                        <span class="text-text-secondary">Conversion Rate Increase</span>
+                                        <span class="text-success font-semibold">+34%</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-text-secondary">Page Load Speed</span>
+                                        <span class="text-success font-semibold">2.1s</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-text-secondary">Mobile Performance</span>
+                                        <span class="text-success font-semibold">95/100</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span class="text-text-secondary">User Satisfaction</span>
+                                        <span class="text-success font-semibold">4.8/5</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 class="font-inter font-semibold text-xl text-text-primary mb-4">Technical Implementation</h3>
+                            <div class="bg-surface border border-border rounded-lg p-4 font-mono text-sm">
+                                <pre class="text-accent">// Advanced filtering with debounced search
+const useProductFilter = () => {
+  const [filters, setFilters] = useState({});
+  const [searchTerm, setSearchTerm] = useState('');
+  
+  const debouncedSearch = useMemo(
+    () => debounce((term) => {
+      // Implement search logic
+    }, 300),
+    []
+  );
+  
+  return { filters, searchTerm, debouncedSearch };
+};</pre>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4">
+                            <a href="https://github.com" target="_blank" class="btn-secondary">
+                                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                View Code
+                            </a>
+                            <a href="javascript:void(0)" class="btn-primary">
+                                <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                `
+            },
+            'react-dashboard': {
+                title: 'Analytics Pro Dashboard',
+                content: `
+                    <div class="space-y-8">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h3 class="font-inter font-semibold text-xl text-text-primary mb-4">Project Overview</h3>
+                                <p class="text-text-secondary mb-4">Real-time analytics dashboard providing comprehensive insights with interactive charts, data visualization, and performance monitoring capabilities.</p>
+                                <div class="space-y-2">
+                                    <p class="text-sm"><span class="text-accent font-semibold">Timeline:</span> 3 months</p>
+                                    <p class="text-sm"><span class="text-accent font-semibold">Team Size:</span> 2 developers</p>
+                                    <p class="text-sm"><span class="text-accent font-semibold">My Role:</span> Full Stack Developer</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="font-inter font-semibold text-xl text-text-primary mb-4">Key Features</h3>
+                                <ul class="space-y-2 text-text-secondary">
+                                    <li class="flex items-center"><span class="text-accent mr-2">•</span> Real-time data streaming</li>
+                                    <li class="flex items-center"><span class="text-accent mr-2">•</span> Interactive chart components</li>
+                                    <li class="flex items-center"><span class="text-accent mr-2">•</span> Custom date range filtering</li>
+                                    <li class="flex items-center"><span class="text-accent mr-2">•</span> Export functionality</li>
+                                    <li class="flex items-center"><span class="text-accent mr-2">•</span> Responsive design</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 class="font-inter font-semibold text-xl text-text-primary mb-4">WebSocket Implementation</h3>
+                            <div class="bg-surface border border-border rounded-lg p-4 font-mono text-sm">
+                                <pre class="text-accent">// Real-time data connection
+const useWebSocket = (url) => {
+  const [data, setData] = useState(null);
+  const [connected, setConnected] = useState(false);
+  
+  useEffect(() => {
+    const ws = new WebSocket(url);
+    
+    ws.onopen = () => setConnected(true);
+    ws.onmessage = (event) => {
+      setData(JSON.parse(event.data));
+    };
+    
+    return () => ws.close();
+  }, [url]);
+  
+  return { data, connected };
+};</pre>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4">
+                            <a href="https://github.com" target="_blank" class="btn-secondary">
+                                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                View Code
+                            </a>
+                            <a href="javascript:void(0)" class="btn-primary">
+                                <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                </svg>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                `
+            }
+            // Add more case studies as needed
+        };
+
+        // Open modal
+        projectCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const projectId = card.dataset.project;
+                const caseStudy = caseStudies[projectId];
+                
+                if (caseStudy) {
+                    modalTitle.textContent = caseStudy.title;
+                    modalContent.innerHTML = caseStudy.content;
+                    modal.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    // Default case study content
+                    modalTitle.textContent = 'Project Case Study';
+                    modalContent.innerHTML = `
+                        <div class="text-center py-12">
+                            <svg class="w-16 h-16 text-accent mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                            </svg>
+                            <h3 class="font-inter font-semibold text-xl text-text-primary mb-2">Case Study Coming Soon</h3>
+                            <p class="text-text-secondary mb-6">Detailed case study documentation is currently being prepared for this project.</p>
+                            <div class="flex gap-4 justify-center">
+                                <a href="https://github.com" target="_blank" class="btn-secondary">
+                                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                    View Code
+                                </a>
+                                <a href="contact_hub.html" class="btn-primary">
+                                    <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
+                                    Get in Touch
+                                </a>
+                            </div>
+                        </div>
+                    `;
+                    modal.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                }
+            });
+        });
+
+        // Close modal
+        closeModal.addEventListener('click', () => {
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        });
+
+        // Close modal on backdrop click
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Close modal on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll-based animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for scroll animations
+        document.querySelectorAll('.animate-slide-up').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Mobile carousel functionality for touch devices
+        if ('ontouchstart' in window) {
+            const grid = document.getElementById('projects-grid');
+            let startX = 0;
+            let scrollLeft = 0;
+
+            grid.addEventListener('touchstart', (e) => {
+                startX = e.touches[0].pageX - grid.offsetLeft;
+                scrollLeft = grid.scrollLeft;
+            });
+
+            grid.addEventListener('touchmove', (e) => {
+                e.preventDefault();
+                const x = e.touches[0].pageX - grid.offsetLeft;
+                const walk = (x - startX) * 2;
+                grid.scrollLeft = scrollLeft - walk;
+            });
+        }
+    </script>
+</body>
+</html>

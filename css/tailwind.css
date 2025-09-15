@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --color-primary: #0f0f0f; /* Deep canvas for content focus */
+  --color-secondary: #1a1a1a; /* Subtle surface elevation and depth */
+  --color-accent: #64ffda; /* Strategic highlights and interactive states */
+  
+  /* Background Colors */
+  --color-background: #000000; /* True black for maximum contrast moments */
+  --color-surface: #262626; /* Card backgrounds and content containers */
+  
+  /* Text Colors */
+  --color-text-primary: #ffffff; /* High contrast reading for extended content */
+  --color-text-secondary: #a3a3a3; /* Clear hierarchy without harsh contrast */
+  
+  /* Status Colors */
+  --color-success: #10b981; /* emerald-500 - Positive feedback and completed states */
+  --color-warning: #f59e0b; /* amber-500 - Attention without alarm for form guidance */
+  --color-error: #ef4444; /* red-500 - Clear problem indication with helpful tone */
+  
+  /* Border Colors */
+  --color-border: #262626; /* Minimal border approach */
+  --color-border-accent: #64ffda; /* Active states and primary interactive elements */
+  
+  /* Shadow Values */
+  --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  --shadow-modal: 0 10px 25px -3px rgba(0, 0, 0, 0.4);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  code, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+  
+  /* Respect reduced motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-accent text-primary font-inter font-semibold px-6 py-3 rounded-lg transition-all duration-200 ease-out hover:bg-opacity-90 hover:shadow-modal focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-50;
+  }
+  
+  .btn-secondary {
+    @apply bg-surface text-text-primary border border-border font-inter font-semibold px-6 py-3 rounded-lg transition-all duration-200 ease-out hover:border-accent hover:shadow-card focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-50;
+  }
+  
+  .card {
+    @apply bg-surface border border-border rounded-lg p-6 shadow-card transition-all duration-300 ease-out hover:shadow-modal;
+  }
+  
+  .input-field {
+    @apply bg-secondary border border-border text-text-primary px-4 py-3 rounded-lg transition-all duration-200 ease-out focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-20;
+  }
+  
+  .section-transition {
+    @apply transition-all duration-300 ease-out;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent to-success bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .font-source {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+  
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .shadow-modal {
+    box-shadow: var(--shadow-modal);
+  }
+}
